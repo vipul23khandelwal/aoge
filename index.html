@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    margin: 2.5%;
+  float: left;
+  width: 20%;
+  padding: 20px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 400px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;">AO (GE) OFFICE</h2>
+
+<div class="row" style="margin-top: 10%;">
+  <div class="column">
+    <div class="dropdown">
+        <button class="dropbtn">GE</button>
+        <div class="dropdown-content">
+          <a href="#">Payment</a>
+          <a href="#">Audit</a>
+          <a href="#">Finational Advice</a>
+        </div>
+      </div>
+  </div>
+  <div class="column">
+    <div class="dropdown">
+        <button class="dropbtn">CWE</button>
+        <div class="dropdown-content">
+          <a href="#">Payment</a>
+        </div>
+      </div>
+  </div>
+  <div class="column">
+    <div class="dropdown">
+        <button class="dropbtn">CE</button>
+        <div class="dropdown-content">
+          <a href="#">Payment</a>
+          </div>
+      </div>
+  </div>
+    <div class="column">
+        <div class="dropdown">
+            <button class="dropbtn">E-Section</button>
+            <div class="dropdown-content">
+                <a href="#">MER</a>
+              <a href="#">Find Bill</a>
+              </div>
+          </div>
+      </div>
+
+</div>
+
+</body>
+</html>
